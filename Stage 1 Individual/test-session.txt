@@ -1,0 +1,50 @@
+Script started on 2026-09-26 06:57:19+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="129" LINES="12"]
+[?2004h[0;32m@benztranwot [0m➜ [1;34m/workspaces/Project1Individual/Stage 1 Individual [0;36m([1;31mmain[0;36m) [0m$ [7mjavac Product.java WishlistItem.java ItemTester.java[27mjavac Product.java WishlistItem.java ItemTester.java
+[?2004l[?2004h[0;32m@benztranwot [0m➜ [1;34m/workspaces/Project1Individual/Stage 1 Individual [0;36m([1;31mmain[0;36m) [0m$ [7mjava ItemTester[27mjava ItemTester
+[?2004lCSCI 430 Group 8 - Minh Quan Tran - Individual tests
+
+WishlistItem unit tests
+PASS 01: constructor keeps the exact Product reference
+PASS 02: constructor stores quantity 5
+PASS 03: setting 7 replaces 5, rather than producing 12
+PASS 04: quantity can decrease to the minimum valid value 1
+PASS 05: maximum positive int is accepted
+PASS 06: null product rejected
+PASS 07: constructor rejects quantity 0
+PASS 08: setter rejects quantity 0
+PASS 09: failed update leaves quantity 5 and product unchanged
+PASS 10: constructor rejects quantity -1
+PASS 11: setter rejects quantity -1
+PASS 12: failed update leaves quantity 5 and product unchanged
+PASS 13: constructor rejects quantity -2147483648
+PASS 14: setter rejects quantity -2147483648
+PASS 15: failed update leaves quantity 5 and product unchanged
+PASS 16: entries sharing a product keep independent quantities
+PASS 17: different-product entry remains unchanged
+PASS 18: wishlist changes do not alter stock or price
+
+Client-owned list simulation using the assignment quantities
+PASS 19: C1 has P1, P3, P5 with quantity 5
+PASS 20: C2 initially has P1, P2, P4 with quantity 7
+PASS 21: C3 has P1, P2, P5 with quantity 6
+C1: P1=5 P3=5 P5=5
+C2 before: P1=7 P2=7 P4=7
+C3 before: P1=6 P2=6 P5=6
+PASS 22: C2 adds P3 and P5 while retaining prior entries
+PASS 23: C3 is unchanged after additions to C2
+PASS 24: C1 is unchanged after additions to C2
+C2 after: P1=7 P2=7 P4=7 P3=7 P5=7
+C3 after: P1=6 P2=6 P5=6
+PASS 25: replacing C2's P1 quantity keeps five entries and sets quantity 3
+PASS 26: replacing C2's P1 quantity does not affect C1 or C3
+PASS 27: P1 stock and price unchanged
+PASS 28: P2 stock and price unchanged
+PASS 29: P3 stock and price unchanged
+PASS 30: P4 stock and price unchanged
+PASS 31: P5 stock and price unchanged
+
+RESULT: 31 passed, 0 failed
+[?2004h[0;32m@benztranwot [0m➜ [1;34m/workspaces/Project1Individual/Stage 1 Individual [0;36m([1;31mmain[0;36m) [0m$ exit
+[?2004lexit
+
+Script done on 2026-09-26 06:57:33+00:00 [COMMAND_EXIT_CODE="0"]
